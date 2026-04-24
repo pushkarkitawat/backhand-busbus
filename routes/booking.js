@@ -6,7 +6,7 @@ const path = require('path');
 const puppeteer = require('puppeteer');
 const handlebars = require('handlebars');
 
-const chromium = require('@sparticuz/chromium');
+
 // ✅ Create booking (with passenger + booking + payment)
 router.post("/book", async (req, res) => {
   const {
