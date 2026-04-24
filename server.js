@@ -10,7 +10,7 @@ app.get("/back", (req, res) => {
 });
 
 // ✅ FIX HERE
-const PORT = import.meta.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
