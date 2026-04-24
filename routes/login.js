@@ -19,12 +19,10 @@ router.post("/login", async (req, res) => {
   
       const user = rows[0];
   
-      if(password === user.password){
-          const token = jwt.sign({ id: user.id, name: user.name }, "bluebus_secret", {
+      if(password === user.password)
+       const token = jwt.sign({ id: user.id, name: user.name }, "bluebus_secret", {
         expiresIn: "1h",
       });
-      }
-      
       res.json({ message: "Login success",token, user: { id: user.id, name: user.name } });
     } catch (err) {
       console.error(err);
