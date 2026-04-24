@@ -10,5 +10,5 @@ const pool = mysql.createPool({
     rejectUnauthorized: true
   }
 });
-
+console.log(process.env.DB_NAME);
 module.exports = pool;
