@@ -11,7 +11,7 @@ app.use(cors());
 app.use('/api/dashboard', dashboard);
 app.use('/api/booking', booking);
 app.use('/api', login);
-app.get('/', (req, res) => {
+app.get('/bb', (req, res) => {
     res.send('Transport Admin Backend Runningbusbus 🚚');
   });
   
