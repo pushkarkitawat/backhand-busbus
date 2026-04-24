@@ -49,7 +49,7 @@ router.post("/book", async (req, res) => {
     // 3️⃣ Insert booking
     const [bookingResult] = await db.query(
       `INSERT INTO bookings 
-        (passengerId, bus_id, created_at, pnr, from_city, to_city, journey_date, boarding_ponit, droping_ponit, status) 
+        (passengerId, bus_id, created_at, pnr, from_city, to_city, journey_date, boarding_point, droping_point, status) 
        VALUES (?, ?, NOW(), ?, ?, ?, ?, ?, ?, ?)`,
       [passengerId, busId, pnr, from, to, jdate, boarding, dropping, status]
     );
