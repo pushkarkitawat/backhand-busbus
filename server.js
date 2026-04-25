@@ -9,7 +9,7 @@ require('dotenv').config();
 app.use(express.json());
 app.use(cors());
 app.use('/api/dashboard', dashboard);
-app.use('/api/booking', booking);
+app.use('/api/book', booking);
 app.use('/api', login);
 app.get('/bb', (req, res) => {
     res.send('Transport Admin Backend Runningbusbus 🚚');
